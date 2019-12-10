@@ -930,6 +930,11 @@ main figure#gallery-recipe-page:hover {
     transition: 0.15s;
 }
 
+main figure#gallery-recipe-page a:visited {
+    color: black;
+    
+}
+
 main figure#gallery-recipe-page figcaption {
     text-align: center;
     padding: 8px 4px;
