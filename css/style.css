@@ -1,0 +1,953 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Overpass&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    text-align: center;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;    
+	display: flex;
+	font-family: 'Overpass', sans-serif;
+	flex-wrap: wrap;
+	z-index:999;
+}
+
+nav a:link { 
+	font-size:14px;
+    padding: 15px;
+    background: #47B3AE;
+    flex-grow: 1;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;  
+	font-family: 'Overpass', sans-serif;
+}
+
+nav a:visited {  
+    color: #fff;  
+	font-family: 'Overpass', sans-serif;
+}
+
+nav a:hover {    
+    background: #8ee6e2;
+    color: #fff;  
+	font-family: 'Overpass', sans-serif;
+}
+
+#vidbanner {
+    position: fixed;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%,-50%);
+    min-height: 100vh; 
+    min-width: 100%;
+    widows: auto;
+    height: auto;
+    z-index: -1; 
+    background: url(../images/banner-video.jpg) no-repeat;
+    background-size: cover; 
+}
+
+
+#home-banner {
+    position: fixed;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%,-50%);
+    min-height: 100vh; 
+    min-width: 100%;
+    widows: auto;
+    height: auto;
+    z-index: -1; 
+    background: url(../images/home.jpg) center center no-repeat;
+    background-size: cover;
+    
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+hgroup {
+    bottom: 0px;
+    color: #fff;
+    justify-content: flex-end;
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 2vmax;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 40px;
+}
+
+#slider-header hgroup h1 {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#slider-header hgroup h2 {
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+section.parent {
+    background: white;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.parent article {
+    width: 100%;
+    min-height: 100vh;
+    font-size: 14px;
+    padding: 20px;
+}
+
+.parent article h1 {
+    font-size: 30px;
+    margin-left: 15px;
+    padding-top: 30px;
+    padding-left: 20px;
+    font-family: Pacifico, cursive;
+}
+
+.parent article p {
+    line-height: 24px;
+    margin-left: 15px;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-family: Rubik, sans-serif;
+    margin-bottom: 20px;
+}
+
+.parent a:link {
+    background-color: #47B3AE;
+    display: inline-block;
+    margin-left: 35px;
+    margin-top: 15px;
+    color: #fff;
+    font-family: Overpass, sans-serif;
+    text-decoration: none;
+    padding: 13px;
+}
+
+.parent a:hover {    
+    background: #8ee6e2;
+    color: #fff;  
+	font-family: 'Overpass', sans-serif;
+}
+
+.parent a:visited {
+    color: #fff;
+}
+
+.parent #side-img3 {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    background: url(../images/cupcakes-white.jpg) top center no-repeat;
+    flex-flow: row wrap;
+}
+
+#s1 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/pancake.jpg) fixed center center no-repeat;
+}
+
+#s1 h2 {
+    margin-bottom: 30px;
+    margin-right: 30px;
+    text-align: center;
+    font-family: "Varela Round", sans-serif;
+    padding: 30px;
+    background: #FCDFBC;
+}
+
+section.parent {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    background: white;
+}
+
+.parent #side-img2 {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    background: url(../images/recipes.jpg) center center no-repeat;
+    flex-flow: row wrap;
+}
+
+.parent #side-img1 {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    background: url(../images/cupcakes-white.jpg) top right no-repeat;
+    flex-flow: row wrap;
+}
+
+
+/*********RESPONSIVE********/
+
+@media only screen and (min-width:1024px) {
+    .parent {
+    align-content: center;
+ }   
+    .parent article {
+     width: 50%;
+}
+    .parent #side-img1{
+	 width: 50%;
+}      
+    .parent #side-img2{
+	width: 50%;
+}
+
+    article#ingredients #ingredients-col {
+	flex: 50%;
+    column-count: 2;
+}
+
+    #recipe-details  {
+    width: 50%;
+    display: flex;
+}
+
+    
+
+
+}
+
+@media only screen and (min-width:600px) {
+    .parent {
+    align-content: center;
+ }   
+    .parent #side-img1 {
+	 width: 50%;
+}      
+    .parent #side-img2 {
+	width: 50%;
+}
+
+    
+    .parent article {
+    width: 50%;
+}
+
+    .column {
+    flex: 100%;
+    max-width: 100%;
+}
+    
+article#ingredients #ingredients-col {
+	flex: 80%;
+    column-count: 2;
+}
+
+    #recipe-details  {
+    width: 50%;
+    display: flex;
+}
+
+    
+}
+
+    
+@media (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+
+
+/*********FIGURE********/
+
+section.gallery-header {
+    display: block;
+    font-size: 24px;
+    padding-top: 30px;
+    padding-left: 20px;
+    font-family: Pacifico, cursive;
+    background: #FCDFBC;
+}
+
+.gallery {
+    width: 100%;
+    min-height: 70vh;
+    height: auto;
+    display: flex;
+    justify-content:center;
+    align-content: center;
+    z-index: -1;
+    background: #FCDFBC;
+    flex-flow: row wrap;
+    text-decoration: none;
+}
+
+
+.gallery figure {
+    position: relative;
+    width: 250px;
+    height: 400px;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    margin: 10px 20px 20px;
+}
+
+figure h1 {
+    font-family: Rubik, sans-serif;
+    font-size: 18px;
+    color: black;
+    text-shadow: rgba(0, 0, 0, 0.6) 0px 0px 30px;
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    width: 100%;
+    transition: all 0.3s ease 0s;
+}
+
+figcaption.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #47B3AE;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+
+.button {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-decoration: none;
+
+}
+
+.button p {
+    font-family: Overpass, sans-serif;
+    font-size:14px;
+    padding: 15px;
+    background: #FCDFBC;
+    flex-grow: 1;
+    color: black; 
+
+}
+
+
+#r1 {
+    background: url(../images/recipe-cookies-xmas-small.jpg) no-repeat center center;
+}
+
+#r1:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+
+#r2 {
+    background: url(../images/recipe-strawberry-cake.jpg) no-repeat center center;
+}
+
+#r2:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+#r3 {
+    background: url(../images/recipe-ice-cream.jpg) no-repeat center center;
+}
+
+#r3:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+#r4 {
+    background: url(../images/recipe-cheesecake.jpg) no-repeat center center;
+}
+
+#r4:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+
+/*********ABOUT PAGE********/
+
+.content-about {
+	padding: 30px;
+    background: #fff;
+    display: flex;
+}
+
+.text-about {
+    left: 0;
+    right: 0;
+    text-align:center;
+	align-items: center;
+	justify-content: center;
+	margin-left:auto;
+	margin-right:auto;
+    width: 60%;
+}
+
+.content-about p {
+	font-size: 14px;
+    line-height: 24px;
+	font-family: 'Rubik', sans-serif;
+    margin-bottom: 20px;
+}
+
+.content-about h1 {
+	font-size:30px;
+	justify-self: start;
+	padding-bottom:20px;
+	font-family: 'Staatliches', cursive;
+	font-family: 'Pacifico', cursive;
+
+}
+
+
+
+/*********RECIPES PAGE********/
+
+/*********COOKIES********/
+
+#recipe-header{
+    
+    width: 100%; 
+    height: 60vh;
+    background: url(../images/recipe-cookies-xmas.jpg) no-repeat bottom center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    left: 0;
+}
+
+
+#recipe-header h1 {
+    font-size: 42px;
+    color:black;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 300;
+    background: rgba(256, 256, 256, .300);
+    padding: 20px;
+    margin-right: 30px;
+    
+}
+
+
+#recipe-details {
+    justify-content: space-around;
+    padding: 15px;
+    width: 100%;
+}
+
+#recipe-details h1 {
+    font-family: Pacifico, cursive;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+
+#recipe-details article {
+    background: #fff;
+    padding: 20px;
+    margin:20px;
+    margin-left: 10px;
+    width: 100%;
+}
+
+#recipe-details article#ingredients {
+    background: #FCDFBC;
+    padding: 20px;
+    margin:20px;
+    margin-left: 10px;
+
+}
+
+
+article#ingredients #ingredients-col {
+    flex: 100%;
+    max-width: 100%;
+    padding: 0 10px;
+    margin-top: 10px;
+}
+
+#recipe-details article p {
+    margin-bottom:15px;
+    font-family: Rubik, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+
+#recipe-number {
+    background: #47B3AE;
+    font-family: Pacifico, sans-serif;
+    font-size: 16px;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-right: 20px;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.recipe-video-header {
+    display: block;
+    font-size: 24px;
+    padding-left: 20px;
+    font-family: Pacifico, cursive;
+}
+
+#recipe-video {
+    padding: 15px;
+    margin-left: 10px;
+    left: 0;
+    right: 0;
+    text-align:center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/*********STRAWBERRY********/
+
+#recipe-header-2 {
+    
+    width: 100%; 
+    height: 60vh;
+    background: url(../images/recipe-strawberry-cake-b.jpg) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    left: 0;
+}
+
+
+#recipe-header-2 h1 {
+    font-size: 42px;
+    color:black;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 300;
+    background: rgba(256, 256, 256, .300);
+    padding: 20px;
+    margin-right: 30px;
+    
+}
+
+/*********ICE CREAM********/
+
+#recipe-header-3 {
+    
+    width: 100%; 
+    height: 60vh;
+    background: url(../images/recipe-ice-cream-b.jpg) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    left: 0;
+}
+
+
+#recipe-header-3 h1 {
+    font-size: 42px;
+    color:black;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 300;
+    background: rgba(256, 256, 256, .300);
+    padding: 20px;
+    margin-right: 30px;
+    
+}
+
+/*********CHEESECAKE********/
+
+#recipe-header-4 {
+    
+    width: 100%; 
+    height: 60vh;
+    background: url(../images/recipe-cheecake-b.jpg) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    left: 0;
+}
+
+
+#recipe-header-4 h1 {
+    font-size: 42px;
+    color:black;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 300;
+    background: rgba(256, 256, 256, .300);
+    padding: 20px;
+    margin-right: 30px;
+    
+}
+
+/*********CREPES********/
+
+#recipe-header-5 {
+    
+    width: 100%; 
+    height: 60vh;
+    background: url(../images/recipe-crepes-b.jpg) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    left: 0;
+}
+
+
+#recipe-header-5 h1 {
+    font-size: 42px;
+    color:black;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 300;
+    background: rgba(256, 256, 256, .300);
+    padding: 20px;
+    margin-right: 30px;
+    
+}
+
+/*********DRIP CAKE********/
+
+#recipe-header-6 {
+    
+    width: 100%; 
+    height: 60vh;
+    background: url(../images/recipe-bagels-b.jpg) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    left: 0;
+}
+
+
+#recipe-header-6 h1 {
+    font-size: 42px;
+    color:black;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 300;
+    background: rgba(256, 256, 256, .300);
+    padding: 20px;
+    margin-right: 30px;
+    
+}
+
+/*********WAFFLES********/
+
+#recipe-header-7 {
+    
+    width: 100%; 
+    height: 60vh;
+    background: url(../images/recipe-waffle-b.jpg) no-repeat bottom center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    left: 0;
+}
+
+
+#recipe-header-7 h1 {
+    font-size: 42px;
+    color:black;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 300;
+    background: rgba(256, 256, 256, .300);
+    padding: 20px;
+    margin-right: 30px;
+    
+}
+
+/*********SUNDAE********/
+
+#recipe-header-8 {
+    
+    width: 100%; 
+    height: 60vh;
+    background: url(../images/recipe-sundae-b.jpg) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    left: 0;
+}
+
+
+#recipe-header-8 h1 {
+    font-size: 42px;
+    color:black;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 300;
+    background: rgba(256, 256, 256, .300);
+    padding: 20px;
+    margin-right: 30px;
+    
+}
+
+
+/*********FOOTER********/
+
+footer {
+    background-color: rgb(71, 179, 174);
+    color: white;
+    padding: 20px;
+}
+
+footer p {
+    font-family: Rubik, sans-serif;
+    font-size: 12px;
+    padding: 10px;
+}
+
+
+/********* PAGE - CONTACT US ********/
+
+#text-form h1 {
+    margin-top:40px;
+    font-size: 30px;
+    margin-left: 15px;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-family: Pacifico, cursive;
+}
+
+#text-form p {
+    line-height: 24px;
+    margin-left: 15px;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-family: Rubik, sans-serif;
+    margin-bottom: 20px; 
+}
+
+
+
+#formwrapper {
+	width: 50%;
+	background: #f4f7f8;
+	padding: 10px 20px;
+	margin: 20px auto;
+	border-radius: 8px;
+    display: flex;
+    margin-top:30px;
+}
+
+input[type=text], input[type=email] {
+    padding: 12px 0px 4px;
+    margin: 6px 0 20px;
+	border:none;
+    font-size:16px;
+    font-family: 'Rubik', sans-serif;
+    color: #8a97a0;
+    background-color: #e8eeef;
+    transition:all .3s;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	margin-bottom: 30px;
+    box-sizing: border-box; 
+    border-radius: 4px;
+    outline: none;
+    width: 100%;
+}
+
+input[type=text]:focus, input[type=email]:focus {
+    background: #d2d9dd;
+    color: #8a97a0;
+	outline: none;
+}
+
+input[type=submit] {
+   	position: relative;
+	display: block;
+    width: 100%;
+    background: #47B3AE;
+    color: #fff;
+    padding: 15px;
+    margin: 14px 10px 14px 0;
+	outline: none;
+    border: none;
+    cursor: pointer;
+    font-size:14px;
+    font-family: 'Overpass', sans-serif;
+    transition:all .3s;   
+    flex-grow: 1;
+    text-align: center; 
+    margin: 0 auto;
+}
+
+
+
+input[type=submit]:hover {
+    background: #8ee6e2;
+    color: #fff;  
+	font-family: 'Overpass', sans-serif;
+}
+
+textarea {
+    font-family: 'Rubik', sans-serif;
+	background: rgba(255,255,255,.1);
+	border: none;
+	border-radius: 4px;
+	font-size: 16px;
+	margin: 0;
+	outline: 0;
+	padding: 10px;
+	width: 100%;
+	box-sizing: border-box; 
+	background-color: #e8eeef;
+	color:#8a97a0;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	margin-bottom: 30px;
+}
+
+textarea:focus {
+    background: #d2d9dd;
+    color:#fff;
+	outline: none;
+}
+
+
+/********* PAGE - RECIPES ********/
+
+
+#s2 {
+    width: 100%; 
+    height: 100vh;
+    background: url(../images/recipes.jpg) no-repeat center center;
+    background-size: cover;
+    display: flex;
+   	justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#s2 h2 {
+    margin-bottom: 30px;
+    margin-right: 30px;
+    text-align: center;
+    font-family: "Varela Round", sans-serif;
+    padding: 30px;
+    background: #FCDFBC;
+}
+
+
+/*********FIGURE********/
+
+section.gallery-header {
+    display: block;
+    font-size: 24px;
+    padding-top: 30px;
+    padding-left: 20px;
+    font-family: Pacifico, cursive;
+    background: #FCDFBC;
+}
+
+
+
+main {
+	padding:20px;
+	display: grid;
+	grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    background: #FCDFBC;
+	
+}
+
+
+main figure#gallery-recipe-page {
+    margin: 8px 0;
+    padding: 8px;
+    background-color: #fff;
+    
+}
+
+main figure#gallery-recipe-page a:link {
+    text-decoration: none;
+    color: black;
+    
+}
+
+
+main figure#gallery-recipe-page a:active {
+    text-decoration: none;
+    color: black;
+    
+}
+
+main figure#gallery-recipe-page:hover {
+    transform: scale(1.1);
+    transition: 0.15s;
+}
+
+main figure#gallery-recipe-page figcaption {
+    text-align: center;
+    padding: 8px 4px;
+    font-family: Rubik, sans-serif;
+    font-size: 14px;
+}
+
+
+#gallery-recipe-page img {
+	display: block;
+	width: 100%;
+}
+
+#gallery-recipe-page img:hover {
+	opacity: 0.4;
+    transition: 0.3s;
+}
+
+
+
+
